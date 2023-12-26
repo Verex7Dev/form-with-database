@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <style>
+      /* Adicione estilos aqui conforme necessário */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="config.php" method="post">
+      <label for="name">Nome:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Digite seu nome completo"
+        class="input"
+        required
+      />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        class="input"
+        required
+      />
+      <br />
+
+      <label for="senha">Senha:</label>
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Digite sua senha"
+        class="input"
+        required
+      />
+      <br />
+
+      <label for="rsenha">Repetir Senha:</label>
+      <input
+        type="password"
+        name="rsenha"
+        id="rsenha"
+        placeholder="Repita sua senha"
+        class="input"
+        required
+      />
+      <br />
+
+      <button type="submit" class="btn-submit" name="cadastrar" id="cadastrar">
+        Cadastrar
+      </button>
+    </form>
+  </body>
+</html>
